@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "typescript": "^4.3.2",
-    "vite": "^2.5.2"
+    "vite": "^2.5.2",
+    "vite-plugin-html": "^2.1.0"
   }
 }

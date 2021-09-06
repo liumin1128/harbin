@@ -1,15 +1,22 @@
-import { defineConfig } from 'vite'
+import { resolve } from 'path';
+import handlebars from 'vite-plugin-handlebars';
 
-import { minifyHtml, injectHtml } from 'vite-plugin-html'
+const pageData = {
+  '/index.html': {
+    title: 'Main Page',
+  },
+  '/nested/subpage.html': {
+    title: 'Sub Page',
+  },
+};
 
-export default defineConfig({
+export default {
   plugins: [
-    minifyHtml(),
-    injectHtml({
-      data: {
-        title: 'vite-plugin-html-example',
-        injectScript: '<script src="./inject.js"></script>',
+    handlebars({
+      context(pagePath) {
+        return pageData[pagePath];
       },
+      partialDirectory: resolve('./src', 'partials'),
     }),
   ],
-})
+};

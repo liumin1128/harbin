@@ -1,2 +1,17 @@
 <!-- partials/header.hbs -->
-<header>header</header>
+<header>
+    <!-- logo开始 -->
+    <div class="logo"></div>
+    <!-- logo结束 -->
+
+    <!-- 顶部导航开始 -->
+    <div class="nav-tabs">
+        {{#each navList}}
+            <div class="nav-tab">
+                {{title}}
+            </div>
+        {{/each}}
+    </div>
+    <!-- 顶部导航结束 -->
+
+</header>

@@ -1,17 +1,61 @@
 <!-- partials/header.hbs -->
-<header>
-    <!-- logo开始 -->
-    <div class="logo"></div>
-    <!-- logo结束 -->
+<header class="home_page_header">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
 
-    <!-- 顶部导航开始 -->
-    <div class="nav-tabs">
-    {{#each navList}}
-        <div class="nav-tab">
-            {{title}}
+      <a class="navbar-brand" href="#">
+        <!-- logo开始 -->
+        <div class="logo"></div>
+        <!-- logo结束 -->
+      </a>
+
+      <div class="row">
+        <div class="col-md-auto">
         </div>
-    {{/each}}
+        <div class="col">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- 顶部导航开始 -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              {{#each navList}}
+              <li class="nav-item">
+                <a class="nav-link" href="{{url}}">{{title}}</a>
+              </li>
+              {{/each}}
+            </ul>
+            <!-- 顶部导航结束 -->
+          </div>
+        </div>
+      </div>
+
     </div>
-    <!-- 顶部导航结束 -->
+  </nav>
+
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <div class="search">
+          <form class="d-flex">
+            <select class="form-select " aria-label=".form-select-lg example">
+              <option selected="true" value="文章">文章</option>
+              <option value="文章">文章</option>
+              <option value="文章">文章</option>
+              <option value="文章">文章</option>
+            </select>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>

@@ -13,3 +13,10 @@ $border-radius: 0;
 .btn-outline-primary {
     background: #ffffff;
 }
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

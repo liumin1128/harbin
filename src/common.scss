@@ -190,3 +190,36 @@
         margin: 0;
     }
 }
+
+.footer {
+    background-color: #093B99;
+
+    padding: 60px;
+
+    .footer-title {
+        color: #fff;
+        font-size: 24px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .links {
+        display: flex;
+
+        .link {
+            margin-right: 12px;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 17px;
+            font-family: Roboto-Regular, Roboto;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 24px;
+        }
+    }
+}

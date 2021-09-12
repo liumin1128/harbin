@@ -1,0 +1,15 @@
+$primary: #093B99;
+$border-radius: 0;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 23px;
+}
+
+.btn-outline-primary {
+    background: #ffffff;
+}

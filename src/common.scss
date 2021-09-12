@@ -1,0 +1,73 @@
+// @import "bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/variables";
+
+.my-title-1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    border-left: 4px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 14px;
+
+    &::before {
+        content: " ";
+        width: 8px;
+        height: 24px;
+        background: #C9000F;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+
+.my-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .my-list-item {
+        padding: 18px 0;
+        border-bottom: 1px #ccc solid;
+        .h4 {
+            font-size: 17px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: #000000;
+            line-height: 24px;
+            a {
+                text-decoration: none;
+                color: #000000;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    
+        .time {
+            font-size: 12px;
+            font-family: Roboto-Medium, Roboto;
+            font-weight: 500;
+            color: #666;
+            line-height: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.my-img {
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
+    background-color: #999;
+    margin-bottom: 14px;
+}
+
+.section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

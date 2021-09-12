@@ -52,6 +52,7 @@ export default {
       input: {
         main: resolve(__dirname, "index.html"),
         detail: resolve(__dirname, "detail.html"),
+        articles: resolve(__dirname, "articles.html"),
       },
     },
   },

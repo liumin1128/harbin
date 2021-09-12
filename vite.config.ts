@@ -33,7 +33,7 @@ const pageData = {
       },
     ],
   },
-  "/nested/subpage.html": {
+  "/detail.html": {
     title: "Sub Page",
   },
 };
@@ -47,4 +47,12 @@ export default {
       partialDirectory: resolve("./src", "partials"),
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        detail: resolve(__dirname, "detail.html"),
+      },
+    },
+  },
 };

@@ -5,12 +5,12 @@ body {
 .logo {
     width: 100px;
     height: 100px;
-    background: #999;
+    background: #eee;
 }
 
 .home_page_header {
     height: 546px;
-    background-color: #999;
+    background-color: #eee;
     position: relative;
     margin-bottom: 42px;
 
@@ -152,6 +152,32 @@ body {
             left: 0;
             bottom: -24px;
             z-index: -0;
+        }
+    }
+}
+
+.home_section_3 {
+    .section-title {
+        font-size: 36px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: bold;
+        color: #000000;
+        line-height: 42px;
+
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 40px;
+
+        .sub-title {
+            margin-left: 24px;
+            padding-left: 24px;
+            border-left: 1px #000 solid;
+            font-size: 24px;
+            font-family: Roboto-Regular, Roboto;
+            font-weight: 400;
+            color: #000000;
+            line-height: 28px;
         }
     }
 }

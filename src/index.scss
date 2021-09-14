@@ -1,6 +1,11 @@
+
+@import './theme.scss';
+@import './common.scss';
+
+
 body {
     font-family: Roboto-Regular, Roboto;
-    min-width: 1000px;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -16,10 +21,12 @@ body {
     margin-bottom: 102px;
 
     .search {
-        width: 700px;
-        font-size: 24px;
+        width: 100%;
+        margin: auto;
+        max-width: 700px;
         line-height: 28px;
         font-weight: 400px;
+        box-shadow: 0px 4px 4px 1px rgba(8, 59, 153, 0.10000000149011612);
 
         .form-select {
             display: block;
@@ -29,20 +36,41 @@ body {
             color: #ffffff;
             height: 84px;
             width: 184px;
-            font-size: 24px;
             line-height: 28px;
             font-weight: 400px;
-
             text-align: center;
+            padding: 0;
+            font-size: 24px;
         }
 
         input.form-control {
             width: 100%;
             flex: 1;
             border-radius: 0;
-            font-size: 24px;
             line-height: 28px;
             font-weight: 400px;
+            font-size: 24px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        height: 216px;
+        .search-box {
+            padding: 0 40px;
+        }
+        .search {
+            max-width: none;
+            
+            .form-select {
+                height: 44px;
+                width: 67px;
+                font-size: 17px;
+    
+            }
+    
+            input.form-control {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -54,6 +82,10 @@ body {
     right: 0;
     width: 100%;
     margin: auto;
+
+    @include media-breakpoint-down(sm) {
+        bottom: -22px;
+    }
 }
 
 .duixian {
@@ -179,6 +211,17 @@ body {
             font-weight: 400;
             color: #000000;
             line-height: 28px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .section-title {
+            font-size: 24px;
+            .sub-title {
+            font-size: 16px;
+            line-height: 20px;
+
+            }
         }
     }
 }

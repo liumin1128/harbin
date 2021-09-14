@@ -163,6 +163,9 @@
 }
 
 .my-card-list {
+    .my-card-list-item {
+        margin-bottom: 24px;
+    }
     .cover {
         width: 100%;
         height: 0;
@@ -208,9 +211,11 @@
 
     .links {
         display: flex;
+        flex-wrap: wrap;
 
         .link {
             margin-right: 12px;
+            margin-bottom: 12px;
         }
 
         a {
@@ -221,6 +226,9 @@
             color: #FFFFFF;
             line-height: 24px;
         }
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 60px 20px;
     }
 }
 

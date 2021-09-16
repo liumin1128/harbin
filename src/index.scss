@@ -1,4 +1,3 @@
-
 @import './theme.scss';
 @import './common.scss';
 
@@ -11,7 +10,6 @@ body {
 .logo {
     width: 100px;
     height: 100px;
-    background: #eee;
 }
 
 .home_page_header {
@@ -55,19 +53,21 @@ body {
 
     @include media-breakpoint-down(sm) {
         height: 216px;
+
         .search-box {
             padding: 0 40px;
         }
+
         .search {
             max-width: none;
-            
+
             .form-select {
                 height: 44px;
                 width: 67px;
                 font-size: 17px;
-    
+
             }
-    
+
             input.form-control {
                 font-size: 17px;
             }
@@ -217,9 +217,10 @@ body {
     @include media-breakpoint-down(sm) {
         .section-title {
             font-size: 24px;
+
             .sub-title {
-            font-size: 16px;
-            line-height: 20px;
+                font-size: 16px;
+                line-height: 20px;
 
             }
         }
@@ -276,6 +277,37 @@ body {
                 color: #000000;
                 line-height: 42px;
             }
+        }
+    }
+}
+
+.profile-header {
+    background-color: #093B99;
+
+    .logo {
+        width: 133px;
+        height: 133px;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+
+        .nickname {
+            font-size: 17px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: #FEFEFE;
+            line-height: 20px;
+            margin-right: 12px;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            background-color: #eee;
+            border-radius: 36px;
         }
     }
 }

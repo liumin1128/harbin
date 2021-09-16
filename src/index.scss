@@ -33,7 +33,7 @@ body {
         font-weight: 400px;
         box-shadow: 0px 4px 4px 1px rgba(8, 59, 153, 0.10000000149011612);
 
-        .form-select {
+        .form-select, .select-value {
             display: block;
             background: #093B99;
             border: 0;
@@ -46,6 +46,28 @@ body {
             text-align: center;
             padding: 0;
             font-size: 24px;
+            line-height: 84px;
+        }
+
+        .form-select {
+            position: relative;
+            opacity: 0;
+        }
+
+        .my-select {
+            position: relative;
+            .select-value{
+                opacity: 1;
+                position: absolute;
+                left: 0;
+                top:0px;
+                content: "搜索";
+                width: 100%;
+                height: 100%;
+                // border: 1px red solid;
+                background-color: #093B99;
+                color: #ffffff;
+            }
         }
 
         input.form-control {
@@ -69,10 +91,11 @@ body {
         .search {
             max-width: none;
 
-            .form-select {
+            .form-select, .select-value {
                 height: 44px;
                 width: 67px;
                 font-size: 17px;
+                line-height: 44px;
 
             }
 

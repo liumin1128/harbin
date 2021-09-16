@@ -358,3 +358,13 @@ body {
         overflow-x: auto;
     }
 }
+
+
+.profile_page {
+    @include media-breakpoint-down(sm) {
+
+        .section {
+            margin: 24px 0;
+        }
+    }
+}

@@ -7,16 +7,24 @@ body {
     overflow-x: hidden;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-}
+
 
 .home_page_header {
     height: 546px;
     background-color: #eee;
     position: relative;
     margin-bottom: 102px;
+
+    .home-nav {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+    }
 
     .search {
         width: 100%;
@@ -72,6 +80,18 @@ body {
                 font-size: 17px;
             }
         }
+    }
+
+    .offcanvas {
+        transition: transform 0.2s ease-in-out;
+
+        .list-group-item {
+            text-align: center;
+        }
+    }
+
+    .offcanvas-end {
+        width: 248px;
     }
 }
 

@@ -1,7 +1,7 @@
 <!-- partials/header.hbs -->
 <header class="home_page_header">
 
-  <div class="container ">
+  <div class="container d-none d-md-block">
     <div class="row justify-content-md-end pt-4">
       <div class="col-md-auto ">
         <button type="button" class="btn btn-primary mx-4">登录</button>
@@ -13,22 +13,62 @@
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
 
-      <a class="navbar-brand" href="#">
-        <!-- logo开始 -->
-        <div class="logo"></div>
-        <!-- logo结束 -->
-      </a>
 
-      <div class="row">
-        <div class="col-md-auto">
-        </div>
+
+      <div class="row align-items-center home-nav">
         <div class="col">
+          <a class="" href="#">
+            <!-- logo开始 -->
+            <div class="logo"></div>
+            <!-- logo结束 -->
+          </a>
+        </div>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <div class="col-auto d-block d-md-none">
+          <button type="button" class="btn btn-danger btn-icon btn-lg">
+            兑
+          </button>
+          <button type="button" class="btn btn-primary btn-icon btn-lg" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- 侧边导航开始 -->
+              <ul class="list-group list-group-flush">
+                {{#each navList}}
+                <li class="list-group-item">
+                  <a class="nav-link" href="{{url}}">{{title}}</a>
+                </li>
+                {{/each}}
+              </ul>
+
+                <div class="row justify-content-md-end pt-4">
+                  <div class="col-md-auto ">
+                    <button type="button" class="btn btn-primary mx-4">登录</button>
+                    <button type="button" class="btn btn-outline-primary">注册</button>
+                  </div>
+                </div>
+              <!-- 侧边导航结束 -->
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col-md-auto d-none d-md-block">
+
+
+          {{!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> --}}
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
 

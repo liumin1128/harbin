@@ -8,7 +8,6 @@ body {
 }
 
 
-
 .home_page_header {
     height: 546px;
     background-color: #eee;
@@ -61,6 +60,7 @@ body {
 
     @include media-breakpoint-down(sm) {
         height: 216px;
+        margin-bottom: 00px;
 
         .search-box {
             padding: 0 40px;

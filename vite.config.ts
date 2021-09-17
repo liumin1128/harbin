@@ -54,6 +54,7 @@ export default {
         detail: resolve(__dirname, "detail.html"),
         articles: resolve(__dirname, "articles.html"),
         profile: resolve(__dirname, "profile.html"),
+        create: resolve(__dirname, "create.html"),
       },
     },
   },

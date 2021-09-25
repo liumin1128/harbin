@@ -283,10 +283,15 @@
 
 }
 
+.my-table-list-header {
+    margin-bottom: 12px;
+}
+
 .my-table-list {
     list-style: none;
-    padding: 0;
     margin: 0;
+    background-color: #fff;
+    padding: 20px;
 
     .my-table-list-item {
         padding: 18px 0;

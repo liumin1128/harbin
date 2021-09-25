@@ -11,19 +11,31 @@
 <body>
   <div id="app"></div>
 
-  <!-- header开始 -->
-  {{> profile/header }}
-  <!-- header结束 -->
+
+
+
 
   <div class="profile_page">
+
+    <!-- 侧边开始 -->
+    {{> profile/side }}
+    <!-- 侧边结束 -->
+
+    <!-- header开始 -->
+    {{> profile/header1 }}
+    {{> profile/header2 }}
+    <!-- header结束 -->
+
     <!-- content开始 -->
     {{> profile/secition1 }}
     <!-- content结束 -->
+
+    <!-- footer开始 -->
+    {{> footer }}
+    <!-- footer结束 -->
   </div>
 
-  <!-- footer开始 -->
-  {{> footer }}
-  <!-- footer结束 -->
+
 
   <script type="module" src="/src/main.ts"></script>
 

@@ -631,3 +631,37 @@ body {
         }
     }
 }
+
+.create-header {
+    background-color: #053B99;
+
+    .user {
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        padding-left: 24px;
+        height: 104px;
+
+        .nickname {
+            font-size: 17px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 20px;
+            margin-right: 12px;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            background-color: #eee;
+            border-radius: 36px;
+        }
+    }
+}
+
+.create_page {
+    .my-step {
+        margin-bottom: 60px;
+    }
+}

@@ -401,6 +401,8 @@ body {
         background-color: #ffffff;
         padding: 60px;
         height: 100vh;
+        overflow: scroll;
+        padding-bottom: 200px;
 
         .form {
             max-width: 600px;
@@ -438,6 +440,7 @@ body {
             }
         }
     }
+
 
     @include media-breakpoint-down(sm) {
 

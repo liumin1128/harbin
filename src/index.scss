@@ -393,69 +393,7 @@ body {
     }
 }
 
-.create_page {
-    background-color: #f2f2f2;
-    height: 100vh;
 
-    .paper {
-        background-color: #ffffff;
-        padding: 60px;
-        height: 100vh;
-        overflow: scroll;
-        padding-bottom: 200px;
-
-        .form {
-            max-width: 600px;
-            margin: auto;
-
-            .form-control {
-                line-height: 2;
-            }
-
-            .foot {
-                .btn {
-                    padding-left: 36px;
-                    padding-right: 36px;
-                }
-            }
-
-            .file {
-                height: 156px;
-                background: #F2F3F7;
-                border-radius: 4px 4px 4px 4px;
-                opacity: 1;
-                border: 1px dashed #053B99;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-
-                .btn {
-                    border-radius: 100px;
-                }
-
-                .label {
-                    color: #999;
-                    font-size: 12px;
-                    margin-top: 8px;
-                }
-            }
-        }
-    }
-
-
-    @include media-breakpoint-down(sm) {
-
-        padding-top: 16px;
-
-        .paper {
-            padding-left: 16px;
-            padding-right: 16px;
-
-        }
-
-    }
-}
 
 .profile-side {
     position: fixed;
@@ -662,6 +600,70 @@ body {
             background-color: #eee;
             border-radius: 36px;
         }
+    }
+}
+
+.create_page {
+    background-color: #f2f2f2;
+    height: 100vh;
+
+    .paper {
+        background-color: #ffffff;
+        padding: 60px;
+        height: calc(100vh - 104px);
+        overflow: scroll;
+        padding-bottom: 200px;
+
+        .form {
+            max-width: 600px;
+            margin: auto;
+
+            .form-control {
+                line-height: 2;
+            }
+
+            .foot {
+                .btn {
+                    padding-left: 36px;
+                    padding-right: 36px;
+                }
+            }
+
+            .file {
+                height: 156px;
+                background: #F2F3F7;
+                border-radius: 4px 4px 4px 4px;
+                opacity: 1;
+                border: 1px dashed #053B99;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .btn {
+                    border-radius: 100px;
+                }
+
+                .label {
+                    color: #999;
+                    font-size: 12px;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+
+
+    @include media-breakpoint-down(sm) {
+
+        padding-top: 16px;
+
+        .paper {
+            padding-left: 16px;
+            padding-right: 16px;
+
+        }
+
     }
 }
 

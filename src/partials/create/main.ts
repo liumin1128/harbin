@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-var forms = document.querySelectorAll(".create-form-step3");
+var forms = document.querySelectorAll(".create-form-step1");
 
 Array.prototype.slice.call(forms).forEach(function (form) {
   form.addEventListener(
@@ -11,11 +11,11 @@ Array.prototype.slice.call(forms).forEach(function (form) {
       event.stopPropagation();
 
       // get form 表单的值，用于构建自定义请求
-      let json = $(".create-form-step3").serialize();
+      let json = $(".create-form-step1").serialize();
       console.log("json : ", json);
       alert(JSON.stringify(json));
 
-      // window.location.pathname = "/create3.html";
+      window.location.pathname = "/create2.html";
     },
     false
   );

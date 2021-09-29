@@ -488,8 +488,31 @@
         .btn {
             padding: 2px;
         }
+
         .btn-link {
             text-decoration: none;
         }
+    }
+}
+
+.my-file-input {
+    height: 156px;
+    background: #F2F3F7;
+    border-radius: 4px 4px 4px 4px;
+    opacity: 1;
+    border: 1px dashed #053B99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .btn {
+        border-radius: 100px;
+    }
+
+    .label {
+        color: #999;
+        font-size: 12px;
+        margin-top: 8px;
     }
 }

@@ -11,16 +11,32 @@
 <body>
   <div id="app"></div>
 
-  <!-- header开始 -->
-  {{> create/header }}
-  <!-- header结束 -->
+  <div class="cms_layout">
 
-  <div class="create_page">
-    <!-- content开始 -->
-    {{> create3/secition1 }}
-    <!-- content结束 -->
+    <!-- 侧边开始 -->
+    {{> profile/side }}
+    <!-- 侧边结束 -->
+
+    <!-- header开始 -->
+    {{> profile/header1 }}
+    {{> profile/header2 }}
+    <!-- header结束 -->
+
+    <div class="cms_layout-content">
+      <div class="cms_layout-papper">
+        <div class="container">
+          <!-- content开始 -->
+          {{> create3/secition1 }}
+          <!-- content结束 -->
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer开始 -->
+    {{> footer }}
+    <!-- footer结束 -->
   </div>
-
 
 
   <script type="module" src="/src/main.ts"></script>

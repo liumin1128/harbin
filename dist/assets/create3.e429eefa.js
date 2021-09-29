@@ -1,0 +1,1 @@
+import"./index.8f69d13c.js";import{$ as e}from"./vendor.d8c1462c.js";var t=document.querySelectorAll(".create-form-step3");Array.prototype.slice.call(t).forEach((function(t){t.addEventListener("submit",(function(t){t.preventDefault(),t.stopPropagation();let r=e(".create-form-step3").serialize();console.log("json : ",r),alert(JSON.stringify(r))}),!1)}));

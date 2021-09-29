@@ -6,56 +6,154 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <script type="module" crossorigin src="/assets/create.f66d5717.js"></script>
-    <link rel="modulepreload" href="/assets/index.3cbcaca4.js">
+  <script type="module" crossorigin src="/assets/create.ef177291.js"></script>
+    <link rel="modulepreload" href="/assets/index.8f69d13c.js">
     <link rel="modulepreload" href="/assets/vendor.d8c1462c.js">
-    <link rel="stylesheet" href="/assets/index.c36a9439.css">
+    <link rel="stylesheet" href="/assets/index.fe78f106.css">
   </head>
 
 <body>
   <div id="app"></div>
 
-  <!-- header开始 -->
-  <div class="create-header">
-      <div class="container">
-          <div class="row">
-              <div class="col">
-                  <div class="logo">
-  
-                  </div>
-              </div>
-              <div class="col"></div>
-              <div class="col-auto">
-                  <div class="user">
-                      <div class="nickname">
-                          Admin
-                      </div>
-                      <div class="avatar" style="background-image:url()">
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>  <!-- header结束 -->
+  <div class="cms_layout">
 
-  <div class="create_page">
-    <!-- content开始 -->
-    <div class="container-sm">
-       <div class="paper">
-          <div class="form">
+    <!-- 侧边开始 -->
+    <div class="cms_layout-side">
+        <a class="logo" href="/profile.html"><img  src="/images/logo.png" alt="" /></a>
     
+        <h1 class="title">新区惠政策兑现平台</h1>
+    
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <i class="bi bi-currency-yen"></i>
+                        我的兑现</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-briefcase-fill"></i>
+                        我的项目</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-info-circle-fill"></i>
+                        企业信息 </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-circle"></i>
+                        用户信息 </a>
+                </li>
+            </ul>
+        </div>
+    </div>    <!-- 侧边结束 -->
+
+    <!-- header开始 -->
+    <div class="cms_layout-header-mobile">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <a href="/profile.html"><img class="logo" src="/images/logo.png" alt="" /></a>
+                </div>
+                <div class="col-auto">
+                    <div class="user">
+                        <div class="nickname">
+                            Admin
+                        </div>
+                        <div class="avatar" style="background-image:url()">
+                        </div>
+                    </div>
+                    <a href="/create.html">
+                        <button type="button" class="btn btn-light">
+                            <i class="bi bi-plus-lg"></i>
+                            新的兑现</button></a>
+                            
+                </div>
+            </div>
+    
+    
+    
+    
+        </div>
+    
+        <div class="cms_layout-nav-tabs container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="bi bi-currency-yen"></i>
+                        我的兑现</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-briefcase-fill"></i>
+                        我的项目</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-info-circle-fill"></i>
+                        企业信息 </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-circle"></i>
+                        用户信息 </a>
+                </li>
+    
+            </ul>
+        </div>
+    
+    
+    </div>    <div class="cms_layout-header-pc">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-auto">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <a href="/">
+                                <button type="button" class="btn btn-icon btn-lg">
+                                    <i class="bi bi-house-fill"></i>
+                                </button>
+                            </a>
+                        </div>
+    
+                        <div class="col">
+                            <div class="user">
+                                <div class="nickname">
+                                    Admin
+                                </div>
+                                <div class="avatar" style="background-image:url()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- header结束 -->
+
+    <div class="cms_layout-content">
+      <div class="cms_layout-papper">
+        <div class="container">
+          <!-- content开始 -->
+          <div class="form create-section">
+          
              <div class="my-step">
                 <div class="my-step-item active"><span class="point"></span>选择兑换文件</div>
                 <div class="my-step-item "><span class="point"></span>选择兑换条件</div>
                 <div class="my-step-item "><span class="point"></span>提交要件</div>
              </div>
-    
+          
              <form class="row g-3 create-form-step1">
                 <fieldset>
                    <legend>
                       <p class="h3 mb-4">选择兑换文件</p>
                    </legend>
-    
+          
                    <div class="form-check my-form-check mb-3">
                       <input name="checkbox1" class="form-check-input" type="checkbox" value="" id="checkbox1">
                       <label class="form-check-label" for="checkbox1">
@@ -67,7 +165,7 @@
                          </p>
                       </label>
                    </div>
-    
+          
                    <div class="form-check my-form-check mb-3">
                       <input name="checkbox2" class="form-check-input" type="checkbox" value="" id="checkbox2">
                       <label class="form-check-label" for="checkbox2">
@@ -79,7 +177,7 @@
                          </p>
                       </label>
                    </div>
-    
+          
                    <div class="form-check my-form-check mb-3">
                       <input name="checkbox3" class="form-check-input" type="checkbox" value="" id="checkbox3">
                       <label class="form-check-label" for="checkbox3">
@@ -91,26 +189,63 @@
                          </p>
                       </label>
                    </div>
-    
-    
+          
+          
                    <div class="d-flex justify-content-evenly">
                       <button type="submit" class="btn btn-primary">下一步</button>
                    </div>
-    
+          
                 </fieldset>
-    
+          
                 
-    
+          
              </form>
-    
-    
-    
-          </div>
-    
-       </div>
-    </div>    <!-- content结束 -->
-  </div>
+          
+          
+          
+          </div>          <!-- content结束 -->
+        </div>
 
+      </div>
+    </div>
+
+    <!-- footer开始 -->
+    <!-- partials/footer.hbs -->
+    
+    
+    <footer class="footer">
+    <div class="container ">
+    
+        <div class="footer-title">
+            友情链接
+        </div>
+        <div class="links">
+            <div class="link">
+                <a href="#">松北政府官网</a>
+            </div>
+    
+            <div class="link">
+                <a href="#">松北政府官网</a>
+            </div>
+    
+            <div class="link">
+                <a href="#">松北政府官网</a>
+            </div>
+    
+            <div class="link">
+                <a href="#">松北政府官网</a>
+            </div>
+    
+            <div class="link">
+                <a href="#">松北政府官网</a>
+            </div>
+        
+        </div>       
+    </div>
+    
+    </footer>
+    <!-- footer结束 -->
+  </div>
 
 
   

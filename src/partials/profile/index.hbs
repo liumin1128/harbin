@@ -11,11 +11,7 @@
 <body>
   <div id="app"></div>
 
-
-
-
-
-  <div class="profile_page">
+  <div class="cms_layout">
 
     <!-- 侧边开始 -->
     {{> profile/side }}
@@ -26,16 +22,16 @@
     {{> profile/header2 }}
     <!-- header结束 -->
 
-    <!-- content开始 -->
-    {{> profile/secition1 }}
-    <!-- content结束 -->
+    <div class="cms_layout-content">
+      <!-- content开始 -->
+      {{> profile/secition1 }}
+      <!-- content结束 -->
+    </div>
 
     <!-- footer开始 -->
     {{> footer }}
     <!-- footer结束 -->
   </div>
-
-
 
   <script type="module" src="/src/main.ts"></script>
 

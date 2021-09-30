@@ -53,7 +53,7 @@ export default {
         main: resolve(__dirname, "index.html"),
         detail: resolve(__dirname, "detail.html"),
         articles: resolve(__dirname, "articles.html"),
-        profile: resolve(__dirname, "profile.html"),
+        cash: resolve(__dirname, "cash.html"),
         create: resolve(__dirname, "create.html"),
         create2: resolve(__dirname, "create2.html"),
         create3: resolve(__dirname, "create3.html"),

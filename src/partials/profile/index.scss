@@ -1,0 +1,41 @@
+.profle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .user {
+        margin-top: 50px;
+
+        
+        .avatar {
+            display: inline-block;
+            width: 78px;
+            height: 78px;
+            border-radius: 78px;
+            background-color: #ccc;
+            background-image: url(/images/avatar.jpg);
+            background-size: cover;
+        }
+
+        .name {
+            margin-top: 15px;
+            height: 21px;
+            font-size: 18px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.800000011920929);
+            line-height: 21px;
+        }
+    }
+    .userinfo {
+        margin-top: 50px;
+        display: flex;
+        td {
+            padding: 2px 8px;
+        }
+    }
+
+    .btn.logout {
+        margin-top: 80px;
+    }
+}

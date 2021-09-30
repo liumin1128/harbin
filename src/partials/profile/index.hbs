@@ -14,18 +14,26 @@
   <div class="cms_layout">
 
     <!-- 侧边开始 -->
-    {{> profile/side }}
+    {{> cash/side }}
     <!-- 侧边结束 -->
 
     <!-- header开始 -->
-    {{> profile/header1 }}
-    {{> profile/header2 }}
+    {{> cash/header1 }}
+    {{> cash/header2 }}
     <!-- header结束 -->
 
     <div class="cms_layout-content">
-      <!-- content开始 -->
-      {{> profile/secition1 }}
-      <!-- content结束 -->
+      <div class="cms_layout-title d-none d-md-block">
+        用户信息
+      </div>
+      <div class="cms_layout-papper">
+        <div class="container">
+          <!-- content开始 -->
+          {{> profile/secition1 }}
+          <!-- content结束 -->
+        </div>
+
+      </div>
     </div>
 
     <!-- footer开始 -->
@@ -33,9 +41,9 @@
     <!-- footer结束 -->
   </div>
 
+
   <script type="module" src="/src/main.ts"></script>
 
 </body>
 
 </html>
-

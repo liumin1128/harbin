@@ -2,6 +2,56 @@ import $ from "jquery";
 
 var forms = document.querySelectorAll(".create-form-step3");
 
+console.log("xxxx111x");
+
+$("#file1 .my-file-input-input").on("change", () => {
+  var filePath = $("#file1 .my-file-input-input").val() as string;
+  if (filePath.indexOf("jpg") != -1 || filePath.indexOf("png") != -1) {
+    $("#file1 .my-file-input-error").html("").hide();
+    var arr = filePath.split("\\");
+    var fileName = arr[arr.length - 1];
+    $("#file1 .my-file-input-text").html(fileName);
+  } else {
+    $("#file1 .my-file-input-text").html("");
+    $("#file1 .my-file-input-error")
+      .html("您未上传文件，或者您上传文件类型有误！")
+      .show();
+    return false;
+  }
+});
+
+$("#file2 .my-file-input-input").on("change", () => {
+  var filePath = $("#file2 .my-file-input-input").val() as string;
+  if (filePath.indexOf("jpg") != -1 || filePath.indexOf("png") != -1) {
+    $("#file2 .my-file-input-error").html("").hide();
+    var arr = filePath.split("\\");
+    var fileName = arr[arr.length - 1];
+    $("#file2 .my-file-input-text").html(fileName);
+  } else {
+    $("#file2 .my-file-input-text").html("");
+    $("#file2 .my-file-input-error")
+      .html("您未上传文件，或者您上传文件类型有误！")
+      .show();
+    return false;
+  }
+});
+
+$("#file3 .my-file-input-input").on("change", () => {
+  var filePath = $("#file3 .my-file-input-input").val() as string;
+  if (filePath.indexOf("jpg") != -1 || filePath.indexOf("png") != -1) {
+    $("#file3 .my-file-input-error").html("").hide();
+    var arr = filePath.split("\\");
+    var fileName = arr[arr.length - 1];
+    $("#file3 .my-file-input-text").html(fileName);
+  } else {
+    $("#file3 .my-file-input-text").html("");
+    $("#file3 .my-file-input-error")
+      .html("您未上传文件，或者您上传文件类型有误！")
+      .show();
+    return false;
+  }
+});
+
 Array.prototype.slice.call(forms).forEach(function (form) {
   form.addEventListener(
     "submit",

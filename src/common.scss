@@ -473,7 +473,6 @@
     }
 }
 
-
 .my-form-check-2 {
     @extend .my-form-check;
 
@@ -530,14 +529,16 @@
         left: 0;
         opacity: 0;
     }
+
     .my-file-input-text {
-font-size: 12px;
-font-family: Roboto-Regular, Roboto;
-font-weight: 400;
-color: #053B99;
-line-height: 24px;
-margin-bottom: 8px;
+        font-size: 12px;
+        font-family: Roboto-Regular, Roboto;
+        font-weight: 400;
+        color: #053B99;
+        line-height: 24px;
+        margin-bottom: 8px;
     }
+
     .my-file-input-error {
         font-size: 12px;
         font-family: Roboto-Regular, Roboto;
@@ -545,5 +546,64 @@ margin-bottom: 8px;
         color: red;
         line-height: 24px;
         margin-bottom: 8px;
+    }
+}
+
+.base_layout {
+    .base_layout-header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        .logo {
+            width: 235px;
+            height: 90px;
+            background-color: #ccc;
+        }
+
+        .title {
+            font-size: 48px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: #4A5DA4;
+            line-height: 56px;
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            .logo {
+                width: 100px;
+                height: 40px;
             }
+
+            .title {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+
+    }
+
+    .body {
+        background-color: #fff;
+        position: relative;
+
+        &::before {
+            content: " ";
+            position: static;
+            display: block;
+            // left: 0;
+            // top: 0;
+            width: 100%;
+            height: 130px;
+            background-color: #093B99;
+            z-index: -1;
+        }
+
+        .paper {
+            background-color: #fff;
+            margin-top: -65px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    }
 }

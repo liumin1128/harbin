@@ -58,6 +58,8 @@ export default {
         create2: resolve(__dirname, "create2.html"),
         create3: resolve(__dirname, "create3.html"),
         login: resolve(__dirname, "login.html"),
+        company: resolve(__dirname, "company.html"),
+        profile: resolve(__dirname, "profile.html"),
         createproject: resolve(__dirname, "createproject.html"),
       },
     },

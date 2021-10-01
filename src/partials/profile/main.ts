@@ -4,6 +4,7 @@ var forms = document.querySelectorAll(".create-form-step3");
 
 console.log("xxxx111x");
 
+//@ts-ignore
 $("#file1 .my-file-input-input").on("change", () => {
   var filePath = $("#file1 .my-file-input-input").val() as string;
   if (filePath.indexOf("jpg") != -1 || filePath.indexOf("png") != -1) {
@@ -20,6 +21,7 @@ $("#file1 .my-file-input-input").on("change", () => {
   }
 });
 
+//@ts-ignore
 $("#file2 .my-file-input-input").on("change", () => {
   var filePath = $("#file2 .my-file-input-input").val() as string;
   if (filePath.indexOf("jpg") != -1 || filePath.indexOf("png") != -1) {
@@ -36,6 +38,7 @@ $("#file2 .my-file-input-input").on("change", () => {
   }
 });
 
+//@ts-ignore
 $("#file3 .my-file-input-input").on("change", () => {
   var filePath = $("#file3 .my-file-input-input").val() as string;
   if (filePath.indexOf("jpg") != -1 || filePath.indexOf("png") != -1) {

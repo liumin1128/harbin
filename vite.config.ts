@@ -60,6 +60,7 @@ export default {
         login: resolve(__dirname, "login.html"),
         company: resolve(__dirname, "company.html"),
         profile: resolve(__dirname, "profile.html"),
+        project: resolve(__dirname, "project.html"),
         createproject: resolve(__dirname, "createproject.html"),
       },
     },

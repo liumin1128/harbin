@@ -1,0 +1,32 @@
+.company {
+    padding: 32px;
+    background-color: #fff;
+
+    .title {
+        font-size: 18px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: bold;
+        color: #000000;
+        line-height: 21px;
+    }
+
+    .p {
+        font-size: 14px;
+        font-family: Roboto-Regular, Roboto;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.800000011920929);
+        line-height: 16px;
+    }
+
+    .img {
+        display: inline-block;
+        width: 200px;
+        height: 140px;
+        background-color: #ccc;
+        margin-bottom: 12px;
+    }
+
+    .hr {
+        margin: 32px 0;
+    }
+}

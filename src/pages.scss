@@ -28,6 +28,10 @@ body {
         font-weight: 400px;
         box-shadow: 0px 4px 4px 1px rgba(8, 59, 153, 0.10000000149011612);
 
+        input.form-control {
+            height: 84px;
+        }
+
         .form-select,
         .select-value {
             display: block;
@@ -52,6 +56,8 @@ body {
 
         .my-select {
             position: relative;
+
+        
 
             .select-value {
                 opacity: 1;
@@ -87,6 +93,10 @@ body {
 
         .search {
             max-width: none;
+
+            input.form-control {
+                height: 48px;
+            }
 
             .form-select,
             .select-value {
@@ -349,6 +359,7 @@ body {
             height: 36px;
             background-color: #eee;
             border-radius: 36px;
+            background-size: cover;
         }
     }
 }
@@ -473,6 +484,8 @@ body {
             height: 36px;
             background-color: #eee;
             border-radius: 36px;
+            background-size: cover;
+
         }
     }
 }
@@ -625,6 +638,8 @@ body {
             height: 36px;
             background-color: #eee;
             border-radius: 36px;
+            background-size: cover;
+
         }
     }
 }

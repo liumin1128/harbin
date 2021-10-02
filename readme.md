@@ -6,3 +6,9 @@
 
 ### ui框架
 [bootstrap](https://v5.bootcss.com/)
+
+### 注意事项
+
+编译完样式文件后，需手动修改main.css中，字体文件的引用路径；
+
+将完整的assets目录上传至模板目录即可。

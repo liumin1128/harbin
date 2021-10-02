@@ -5,14 +5,14 @@ const pageData = {
   "/index.html": {
     title: "哈尔滨新区",
     navList: [
-      { title: "新区发布", url: "#" },
-      { title: "双创惠", url: "#" },
-      { title: "活动惠", url: "#" },
-      { title: "政策惠", url: "#" },
-      { title: "场地惠", url: "#" },
-      { title: "资本惠", url: "#" },
-      { title: "服务惠", url: "#" },
-      { title: "项目惠", url: "#" },
+      { title: "新区发布", key: "1", url: "#" },
+      { title: "双创惠", key: "2", url: "#" },
+      { title: "活动惠", key: "3", url: "#" },
+      { title: "政策惠", key: "4", url: "#" },
+      { title: "场地惠", key: "5", url: "#" },
+      { title: "资本惠", key: "6", url: "#" },
+      { title: "服务惠", key: "7", url: "#" },
+      { title: "项目惠", key: "8", url: "#" },
     ],
     cardList: [
       {

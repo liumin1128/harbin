@@ -1,5 +1,8 @@
 import "jquery";
-import "bootstrap";
+import * as bootstrap from "bootstrap";
+
+// window.$ = jquery;
+window.bootstrap = bootstrap;
 // import "bootstrap-icons";
 // import "bootstrap/dist/css/bootstrap.min.css";
 

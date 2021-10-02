@@ -1,0 +1,449 @@
+<div class="component">
+
+
+   <!-- 文本与段落  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">文本与段落</h3>
+
+   </div>
+   <hr>
+   <!-- 文本与段落  -->
+
+
+   <!-- Button  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">Button</h3>
+
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+
+      <button type="button" class="btn btn-link">Link</button>
+
+   </div>
+   <hr>
+
+   <!-- Button  -->
+
+
+   <!-- 文本与段落  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">文本与段落</h3>
+
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+      <p>pythgran</p>
+   </div>
+
+   <hr>
+   <!-- 文本与段落  -->
+
+
+
+
+   <!-- 文本与段落  -->
+
+   <!-- Toast Message  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">Toast Message</h3>
+
+      <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+         <div id="liveToast" class="toast align-items-center text-white bg-primary border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+               <div class="toast-body">
+                  Hello, world! This is a toast message.
+               </div>
+               <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                  aria-label="Close"></button>
+            </div>
+         </div>
+      </div>
+
+      <script>
+         var toastTrigger = document.getElementById("liveToastBtn");
+
+         var toastLiveExample = document.getElementById("liveToast");
+         if (toastTrigger) {
+            toastTrigger.addEventListener("click", function () {
+               var toast = new bootstrap.Toast(toastLiveExample);
+
+               toast.show();
+            });
+         }
+      </script>
+
+      <br>
+      <br>
+
+      <button type="button" class="btn btn-danger" id="liveToastBtn2">Show Error toast</button>
+
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+         <div id="liveToast2" class="toast align-items-center text-white bg-danger border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+               <div class="toast-body">
+                  Hello, world! This is a toast message.
+               </div>
+               <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                  aria-label="Close"></button>
+            </div>
+         </div>
+      </div>
+
+      <script>
+         var toastTrigger2 = document.getElementById("liveToastBtn2");
+
+         var toastLiveExample2 = document.getElementById("liveToast2");
+         if (toastTrigger2) {
+            toastTrigger2.addEventListener("click", function () {
+               var toast = new bootstrap.Toast(toastLiveExample2);
+               toast.show();
+            });
+         }
+      </script>
+
+   </div>
+   <hr>
+
+   <!-- Toast Message  -->
+
+
+   <!-- 步骤条  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">步骤条</h3>
+
+
+      <div class="my-step">
+         <div class="my-step-item active"><span class="point"></span>选择兑换文件</div>
+         <div class="my-step-item "><span class="point"></span>选择兑换条件</div>
+         <div class="my-step-item "><span class="point"></span>提交要件</div>
+      </div>
+
+      <div class="mb-5"></div>
+
+      <div class="my-step">
+         <div class="my-step-item "><span class="point"></span>选择兑换文件</div>
+         <div class="my-step-item active"><span class="point"></span>选择兑换条件</div>
+         <div class="my-step-item "><span class="point"></span>提交要件</div>
+      </div>
+
+      <div class="mb-5"></div>
+
+      <div class="my-step">
+         <div class="my-step-item "><span class="point"></span>选择兑换文件</div>
+         <div class="my-step-item "><span class="point"></span>选择兑换条件</div>
+         <div class="my-step-item active"><span class="point"></span>提交要件</div>
+      </div>
+
+      <div class="mb-5"></div>
+
+      <div class="my-step">
+         <div class="my-step-item "><span class="point"></span>111</div>
+         <div class="my-step-item "><span class="point"></span>222</div>
+         <div class="my-step-item "><span class="point"></span>333</div>
+         <div class="my-step-item active"><span class="point"></span>444</div>
+         <div class="my-step-item "><span class="point"></span>555</div>
+         <div class="my-step-item "><span class="point"></span>666</div>
+      </div>
+
+   </div>
+   <hr>
+
+   <!-- 步骤条  -->
+
+
+   <!-- Form 表单  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">Form 表单</h3>
+
+      <div class="form max-width-600">
+
+         <form class="row component-form-id-1">
+            <fieldset>
+               <legend>
+                  <p class="h3 mb-4">选择兑换文件</p>
+               </legend>
+
+               <div class="form-check my-form-check mb-3">
+                  <input name="checkbox1" class="form-check-input" type="checkbox" value="" id="checkbox1">
+                  <label class="form-check-label" for="checkbox1">
+                     <h6>
+                        温情21条
+                     </h6>
+                     <p>
+                        哈尔滨新区印发关于支持企业有效应对疫情安全有序复工复产的政策措施的通知
+                     </p>
+                  </label>
+               </div>
+
+
+
+               <div class="form-check my-form-check-2 mb-3">
+                  <input name="checkbox2" class="form-check-input" type="checkbox" value="" id="checkbox2">
+                  <label class="form-check-label" for="checkbox2">
+                     <h6 class="label-title">
+                        <div class="row">
+                           <div class="col">
+                              积极扩大对外贸易
+                              <button class="btn btn-primary btn-sm" type="button">
+                                 政策详情 >
+                              </button>
+                           </div>
+                           <div class="col-auto">
+                              <button type="button" class="btn btn-link" data-bs-toggle="collapse"
+                                 data-bs-target="#checkbox2-label-content" aria-expanded="false"
+                                 aria-controls="checkbox2-label-content">展开</button>
+
+                           </div>
+                        </div>
+
+                     </h6>
+                     <div class="collapse" id="checkbox2-label-content">
+                        <br>
+
+                        <p>
+                           1.限上外商投资企业和年进出口额超过200万美元（海关统计）的外贸企业，每年对地方经济发展的贡献（区本级留成部分）全额奖励给企业。
+                        </p>
+                        <p>
+                           2.对片区重大改革创新具有示范引领作用的外向型总部经济项目，采取“一事一议”的方式，给予最高不超过投资总额5%的奖励
+                        </p>
+
+                     </div>
+
+                  </label>
+               </div>
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">输入框</label>
+                  <input name="input1" type="text" id="disabledTextInput" class="form-control" placeholder="企业基本信息">
+                  <div class="invalid-feedback">
+                     Please select a valid state.
+                  </div>
+               </div>
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">多行文本输入框</label>
+                  <textarea placeholder="这就是内容" class="form-control" id="exampleFormControlTextarea1"
+                     rows="3"></textarea>
+               </div>
+
+
+
+               <div class="d-flex justify-content-evenly">
+                  {{!-- <button type="submit" class="btn btn-outline-primary">上一步</button> --}}
+                  {{!-- <a href="/create2.html"><button type="submit" class="btn btn-primary">下一步</button></a> --}}
+                  <button type="submit" class="btn btn-primary">下一步</button>
+               </div>
+
+            </fieldset>
+
+
+         </form>
+
+
+         <script>
+
+            document.querySelector(".component-form-id-1").addEventListener(
+               "submit",
+               function () {
+                  // 阻止浏览器默认提交事件，如果不需要就移除下面这两句
+                  event.preventDefault();
+                  event.stopPropagation();
+
+                  console.log("xxxxxx")
+
+                  // get form 表单的值，用于构建自定义请求
+                  let json = $(".component-form-id-1").serialize();
+                  console.log("json : ", json);
+                  alert(JSON.stringify(json));
+                  // window.location.pathname = "/create3.html";
+               },
+               false
+            );
+         </script>
+
+
+      </div>
+   </div>
+   <hr>
+   <!-- Form 表单  -->
+
+
+   <!-- Form 表单  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">带状态的 Form 表单</h3>
+
+      <div class="form max-width-600">
+
+         <form class="row component-form-id-2">
+            <fieldset>
+               <legend>
+                  <p class="h3 mb-4"></p>
+               </legend>
+
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label ">校验成功的输入框</label>
+                  <input name="input1" type="text" id="disabledTextInput" class="form-control is-valid"
+                     placeholder="企业基本信息">
+                  <div class="valid-feedback">
+                     Success message
+                  </div>
+               </div>
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">多行文本输入框</label>
+                  <textarea placeholder="这就是占位" class="form-control is-valid" id="exampleFormControlTextarea1"
+                     rows="3"></textarea>
+                  <div class="valid-feedback">
+                     Looks good!
+                  </div>
+               </div>
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label ">校验失败的输入框</label>
+                  <input name="input2" type="text" id="disabledTextInput" class="form-control is-invalid"
+                     placeholder="企业基本信息">
+                  <div class="invalid-feedback">
+                     Error message
+                  </div>
+               </div>
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">多行文本输入框</label>
+                  <textarea placeholder="这就是占位" class="form-control is-invalid" id="exampleFormControlTextarea1"
+                     rows="3"></textarea>
+                  <div class="invalid-feedback">
+                     Looks good!
+                  </div>
+               </div>
+
+               <div class="d-flex justify-content-evenly">
+                  {{!-- <button type="submit" class="btn btn-outline-primary">上一步</button> --}}
+                  {{!-- <a href="/create2.html"><button type="submit" class="btn btn-primary">下一步</button></a> --}}
+                  <button type="submit" class="btn btn-primary">下一步</button>
+               </div>
+
+            </fieldset>
+
+
+         </form>
+
+
+         <script>
+
+            document.querySelector(".component-form-id-2").addEventListener(
+               "submit",
+               function () {
+                  // 阻止浏览器默认提交事件，如果不需要就移除下面这两句
+                  event.preventDefault();
+                  event.stopPropagation();
+
+                  console.log("xxxxxx")
+
+                  // get form 表单的值，用于构建自定义请求
+                  let json = $(".component-form-id-2").serialize();
+                  console.log("json : ", json);
+                  alert(JSON.stringify(json));
+                  // window.location.pathname = "/create3.html";
+               },
+               false
+            );
+         </script>
+
+
+      </div>
+   </div>
+   <hr>
+   <!-- Form 表单  -->
+
+
+   <!-- Form 表单  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">前端控制的表单校验</h3>
+
+      <div class="form max-width-600">
+
+         <form class="row component-form-id-3" novalidate>
+            <fieldset>
+               <legend>
+                  <p class="h3 mb-4"></p>
+               </legend>
+
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label ">校验成功的输入框</label>
+                  <input name="input1" type="text" id="disabledTextInput" class="form-control" placeholder="企业基本信息"
+                     required>
+                  <div class="valid-feedback">
+                     Success message
+                  </div>
+                  <div class="invalid-feedback">
+                     Error message
+                  </div>
+               </div>
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">多行文本输入框</label>
+                  <textarea placeholder="这就是占位" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                     required></textarea>
+                  <div class="valid-feedback">
+                     Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                     Error message
+                  </div>
+               </div>
+
+               <div class="d-flex justify-content-evenly">
+                  <button type="submit" class="btn btn-primary">下一步</button>
+               </div>
+
+            </fieldset>
+
+
+         </form>
+
+
+         <script>
+
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.component-form-id-3')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+               .forEach(function (form) {
+                  form.addEventListener('submit', function (event) {
+                     if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                     }
+
+                     form.classList.add('was-validated')
+
+                     event.preventDefault()
+                     event.stopPropagation()
+                  }, false)
+               })
+         </script>
+
+
+      </div>
+   </div>
+   <hr>
+   <!-- Form 表单  -->
+
+</div>

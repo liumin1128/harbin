@@ -64,6 +64,7 @@ export default {
         profile: resolve(__dirname, "profile.html"),
         project: resolve(__dirname, "project.html"),
         createproject: resolve(__dirname, "createproject.html"),
+        component: resolve(__dirname, "component.html"),
       },
       output: {
         // 重点在这里哦

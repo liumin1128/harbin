@@ -104,6 +104,75 @@
    <hr>
    <!-- 纵向步骤条搭配卡片使用  -->
 
+   <!-- loading  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">loading</h3>
+      <div>
+         <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <!-- loading  -->
+
+   <!-- loading button  -->
+   <div class="mb-5 mt-5">
+      <h3 class="mb-4">loading button</h3>
+      <div>
+         <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+         </button>
+         <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+         </button>
+
+         <button id="loading-button-test-1" class="btn btn-primary" type="button">
+            点击我
+         </button>
+
+         <script>
+
+            setTimeout(() => {
+               var loadingButtonTest1 = document.getElementById("loading-button-test-1");
+               loadingButtonTest1.addEventListener("click", () => {
+                  var $strong = $(`<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>`);
+                  loadingButtonTest1.prepend($strong[0]);
+                  loadingButtonTest1.setAttribute("disabled", true)
+               });
+            }, 1000)
+
+
+         </script>
+
+      </div>
+   </div>
+   <hr>
+   <!-- loading button  -->
+
 
    <!-- 文本与段落  -->
    <div class="mb-5 mt-5">

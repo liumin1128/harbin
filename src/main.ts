@@ -1,6 +1,7 @@
 import * as jqueryExports from "jquery";
 import * as bootstrap from "bootstrap";
 
+// @ts-ignore
 window.$ = jqueryExports;
 window.bootstrap = bootstrap;
 

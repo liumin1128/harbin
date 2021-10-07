@@ -452,6 +452,19 @@
                </div>
 
 
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">选择器</label>
+                   <select class="form-select" aria-label="Default select example">
+                     <option selected>Open this select menu</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+
+              
+
+
 
                <div class="d-flex justify-content-evenly">
                   {{!-- <button type="submit" class="btn btn-outline-primary">上一步</button> --}}
@@ -525,6 +538,20 @@
                </div>
 
                <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">选择器</label>
+                   <select class="form-select form-control is-valid" aria-label="Default select example">
+                     <option selected>Open this select menu</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+
+                  <div class="valid-feedback">
+                     Looks good!
+                  </div>
+               </div>
+
+               <div class="mb-4">
                   <label for="disabledTextInput" class="form-label ">校验失败的输入框</label>
                   <input name="input2" type="text" id="disabledTextInput" class="form-control is-invalid"
                      placeholder="企业基本信息">
@@ -538,7 +565,21 @@
                   <textarea placeholder="这就是占位" class="form-control is-invalid" id="exampleFormControlTextarea1"
                      rows="3"></textarea>
                   <div class="invalid-feedback">
-                     Looks good!
+                     Error
+                  </div>
+               </div>
+
+               <div class="mb-4">
+                  <label for="disabledTextInput" class="form-label">选择器</label>
+                   <select class="form-select form-control is-invalid" aria-label="Default select example">
+                     <option selected>Open this select menu</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+
+                  <div class="invalid-feedback">
+                     Error 
                   </div>
                </div>
 

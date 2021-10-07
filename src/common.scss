@@ -166,6 +166,7 @@
     .carousel-control-prev {
         background-image: url(/images/arrow_left.png);
     }
+
     .carousel-control-prev {
         background-image: url(/images/arrow_right.png);
     }
@@ -626,9 +627,146 @@
 
 .my-nav-pills {
     border-bottom: 2px #093B99 solid;
+
     .nav-link {
         border-radius: 0;
         font-size: 24px;
         padding: 0.5rem 2rem;
+    }
+}
+
+.my-step-vertical {
+    .my-step-vertical-item {
+        position: relative;
+        padding-left: 36px;
+
+        .my-step-vertical-item_icon {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background-color: #B9B9B9;
+            ;
+            border-radius: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IkZyYW1lIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTIuNTY3NzcgMTEuMTUyMUgxMS40MzI2QzExLjU1NDMgMTEuMTUyMSAxMS42NTI3IDExLjI1MDYgMTEuNjUyNyAxMS4zNzIyVjExLjk2N0MxMS42NTI3IDEyLjA4ODYgMTEuNTU0MyAxMi4xODcxIDExLjQzMjYgMTIuMTg3MUgyLjU2Nzc3QzIuNDQ2MDkgMTIuMTg3MSAyLjM0NzY2IDEyLjA4ODYgMi4zNDc2NiAxMS45NjdWMTEuMzcyMkMyLjM0NzY2IDExLjI1MDYgMi40NDYwOSAxMS4xNTIxIDIuNTY3NzcgMTEuMTUyMVpNMTAuOTY1IDguMzk0NTFIOS4yMjMyNEM4Ljc1OTc3IDguMzk0NTEgOC4zNzI4NSA4LjAzOTA0IDguMzM1OTQgNy41NzY5M0M4LjIzODg3IDYuMzI3MzIgOS41ODU1NSA1LjcyOTg2IDkuNTg1NTUgNC4xOTcyNEM5LjU4NTU1IDIuODk1NjggOC41OTQzNCAxLjg0NzA1IDcuMDAwMiAxLjg0NzA1QzUuNDA2MDUgMS44NDcwNSA0LjQxNjIxIDIuODk3MDUgNC40MTYyMSA0LjE5NzI0QzQuNDE2MjEgNS43Mjk4NiA1Ljc2Mjg5IDYuMzI3MzIgNS42NjU4MiA3LjU3NjkzQzUuNjI3NTQgOC4wMzkwNCA1LjI0MTk5IDguMzk0NTEgNC43Nzg1MiA4LjM5NDUxSDMuMDM1MzVDMi42NTUyNyA4LjM5NDUxIDIuMzQ3NjYgOC43MDIxMiAyLjM0NzY2IDkuMDgyMlYxMC4yNDI5QzIuMzQ3NjYgMTAuMzY0NiAyLjQ0NjA5IDEwLjQ2MzEgMi41Njc3NyAxMC40NjMxSDExLjQzMjZDMTEuNTU0MyAxMC40NjMxIDExLjY1MjcgMTAuMzY0NiAxMS42NTI3IDEwLjI0MjlWOS4wODIyQzExLjY1MjcgOC43MDM0OSAxMS4zNDUxIDguMzk0NTEgMTAuOTY1IDguMzk0NTFaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+Cjwvc3ZnPgo=);
+        }
+
+        .my-step-vertical-item_title {
+            font-size: 14px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6);
+            line-height: 24px;
+
+        }
+
+        .my-step-vertical-item_content {
+            margin-top: 8px;
+            margin-bottom: 24px;
+
+            p {
+                font-size: 12px;
+                font-family: Roboto-Regular, Roboto;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.6);
+                line-height: 16px;
+                margin: 0;
+            }
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            left: 11px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background-color: #E7E7E7;
+            z-index: 0;
+        }
+
+        &.warning {
+            .my-step-vertical-item_title {
+                color: $warning;
+            }
+
+        }
+
+        &.danger {
+            .my-step-vertical-item_title {
+                color: $danger;
+            }
+
+        }
+
+        &.success {
+            .my-step-vertical-item_title {
+                color: $primary;
+            }
+        }
+
+        &.warning,
+        &.success,
+        &.danger {
+            &::after {
+                background-color: $primary;
+            }
+
+            .my-step-vertical-item_icon {
+                background-color: $primary;
+            }
+        }
+
+
+        &.active {
+            &::after {
+                background-color: #E7E7E7;
+            }
+
+            .my-step-vertical-item_icon {
+                box-shadow: 0 0 0px 4px rgba(5, 59, 153, 0.2);
+            }
+        }
+
+        &.active~.my-step-vertical-item {
+            &::after {
+                background-color: #E7E7E7;
+            }
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.my-card {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 32px 1px rgba(26, 26, 26, 0.2);
+    border-radius: 4px 4px 4px 4px;
+
+    .my-card-header {
+        padding: 18px 20px;
+
+        font-size: 12px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: bold;
+        color: #000000;
+        line-height: 14px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .my-card-body {
+        padding: 18px 20px;
+
+    }
+    .my-card-foot {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 18px 20px;
     }
 }

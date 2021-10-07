@@ -1,4 +1,6 @@
 $primary: #093B99;
+$danger: #CC352F;
+$warning: #D96F39;
 // $border-radius: 0;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -12,6 +14,10 @@ $primary: #093B99;
     // // padding: 10px 23px;
     // border-radius: 0;
     
+}
+
+.btn.btn-link  {
+    text-decoration: none;
 }
 
 .btn-outline-primary {
@@ -29,3 +35,7 @@ input.form-control {
     height: 48px;
 }
 
+
+.full {
+    width: 100%;
+}

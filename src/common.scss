@@ -514,7 +514,7 @@
 }
 
 .my-file-input {
-    height: 156px;
+    min-height: 156px;
     background: #F2F3F7;
     border-radius: 4px 4px 4px 4px;
     opacity: 1;
@@ -524,6 +524,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+    padding: 24px;
 
     .btn {
         border-radius: 100px;
@@ -561,6 +562,10 @@
         color: red;
         line-height: 24px;
         margin-bottom: 8px;
+    }
+
+    .my-file-input-img {
+        width: 100%;
     }
 }
 
@@ -772,5 +777,19 @@
     .my-card-foot {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         padding: 18px 20px;
+    }
+}
+
+.multi-form-control {
+    .multi-form-control-item {
+        border: 1px rgba(0, 0, 0, 0.1) solid;
+        padding: 24px 12px;
+        // background-color: #f2f2f2;
+        border-radius: 4px;
+    }
+    .multi-form-control-item-title {
+        font-weight: bold;
+        height: 38px;
+        line-height: 38px;
     }
 }

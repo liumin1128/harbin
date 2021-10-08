@@ -1,1 +1,1 @@
-import"./main2.js";import"./main3.js";import"./vendor.js";
+import"./main2.js";import{$ as e}from"./vendor.js";setTimeout((()=>{document.querySelector(".create-form-step2").addEventListener("submit",(function(t){t.preventDefault(),t.stopPropagation();let o=e(".create-form-step2").serialize();console.log("json : ",o),alert(JSON.stringify(o)),window.location.pathname="/create3.html"}),!1)}),300);

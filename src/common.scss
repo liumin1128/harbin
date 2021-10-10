@@ -770,10 +770,12 @@
         line-height: 14px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
     .my-card-body {
         padding: 18px 20px;
 
     }
+
     .my-card-foot {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         padding: 18px 20px;
@@ -787,6 +789,7 @@
         // background-color: #f2f2f2;
         border-radius: 4px;
     }
+
     .multi-form-control-item-title {
         font-weight: bold;
         height: 38px;
@@ -803,4 +806,33 @@
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.my-modal {
+    
+    @include media-breakpoint-down(sm) {
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-title {
+            font-size: 14px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: #000000;
+            line-height: 16px;
+            border-bottom: none;
+        }
+        .modal-footer {
+            padding: 0;
+            display: flex;
+            justify-content:center;
+            .btn {
+                margin: 0;
+                border-radius: 0;
+                width: 100%;
+                flex: 1;
+                height: 48px;
+            }
+        }
+    }
 }

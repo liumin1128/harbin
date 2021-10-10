@@ -65,6 +65,7 @@ export default {
         project: resolve(__dirname, "project.html"),
         createproject: resolve(__dirname, "createproject.html"),
         component: resolve(__dirname, "component.html"),
+        search: resolve(__dirname, "search.html"),
       },
       output: {
         // 重点在这里哦

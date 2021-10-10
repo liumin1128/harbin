@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Vite App</title><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="module" crossorigin src="/assets/component.js"></script>
     <link rel="modulepreload" href="/assets/main2.js">
     <link rel="modulepreload" href="/assets/vendor.js">
@@ -143,6 +143,46 @@
         <div class="container">
           <!-- content开始 -->
           <div class="component">
+          
+             <!-- 文本与段落  -->
+             <div class="mb-5 mt-5">
+                <h3 class="mb-4">文本与段落</h3>
+          
+             </div>
+             <hr>
+             <!-- 文本与段落  -->
+          
+          
+             <!-- 弹出modal  -->
+             <div class="mb-5 mt-5">
+                <h3 class="mb-4">弹出modal</h3>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Launch demo modal
+                </button>
+          
+                <!-- Modal -->
+                <div class="modal fade my-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                      <div class="modal-content">
+                         <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">标题</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                         <div class="modal-body">
+                            您有一个新消息来自兑现平台，不要忘记去查看～
+                         </div>
+                         <div class="modal-footer">
+                            <button type="button" class="btn btn-link" data-bs-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary">去处理</button>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <hr>
+             <!-- 弹出modal  -->
+          
           
           
              <!-- 纵向步骤条  -->
@@ -357,13 +397,6 @@
              <!-- 分页  -->
           
           
-             <!-- 文本与段落  -->
-             <div class="mb-5 mt-5">
-                <h3 class="mb-4">文本与段落</h3>
-          
-             </div>
-             <hr>
-             <!-- 文本与段落  -->
           
           
              <!-- Button  -->
@@ -598,7 +631,7 @@
           
                          <div class="mb-4">
                             <label for="disabledTextInput" class="form-label">选择器</label>
-                             <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example">
                                <option selected>Open this select menu</option>
                                <option value="1">One</option>
                                <option value="2">Two</option>
@@ -606,7 +639,14 @@
                             </select>
                          </div>
           
-                        
+          
+                         <div class="input-group mb-4">
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1">获取验证码</button>
+          
+          </div>
+          
+          
           
           
           
@@ -681,7 +721,7 @@
           
                          <div class="mb-4">
                             <label for="disabledTextInput" class="form-label">选择器</label>
-                             <select class="form-select form-control is-valid" aria-label="Default select example">
+                            <select class="form-select form-control is-valid" aria-label="Default select example">
                                <option selected>Open this select menu</option>
                                <option value="1">One</option>
                                <option value="2">Two</option>
@@ -713,7 +753,7 @@
           
                          <div class="mb-4">
                             <label for="disabledTextInput" class="form-label">选择器</label>
-                             <select class="form-select form-control is-invalid" aria-label="Default select example">
+                            <select class="form-select form-control is-invalid" aria-label="Default select example">
                                <option selected>Open this select menu</option>
                                <option value="1">One</option>
                                <option value="2">Two</option>
@@ -721,7 +761,7 @@
                             </select>
           
                             <div class="invalid-feedback">
-                               Error 
+                               Error
                             </div>
                          </div>
           

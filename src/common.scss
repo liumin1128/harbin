@@ -844,3 +844,89 @@
         }
     }
 }
+
+.my-multi-upload {
+    display: flex;
+    margin: -12px;
+    flex-wrap: wrap;
+
+    .my-multi-upload-item,
+    .my-multi-upload-add {
+        width: 94px;
+        height: 94px;
+        border-radius: 4px;
+        border: 1px dashed #B3B3B3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-multi-upload-box {
+        margin: 12px;
+
+        .my-multi-upload-name {
+            margin-top: 4px;
+            max-width: 94px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+
+    .my-multi-upload-item {
+        padding: 4px;
+        position: relative;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background-color: rgba(255,0,0,0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $danger;
+            cursor: pointer;
+            border-radius: 0 0 0 8px;
+            font-size: 20px;
+        }
+    }
+
+    .my-multi-upload-add {
+        font-size: 28px;
+        color: $primary;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            border-color: $primary;
+            background: #F2F3F7;
+        }
+
+        input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    .my-multi-upload-box.danger {
+        .my-multi-upload-name {
+            color: $danger;
+        }
+
+        .my-multi-upload-item {
+            border-color: $danger;
+        }
+    }
+}

@@ -53,12 +53,20 @@
         border-color: #23AC3A;
         display: flex;
         align-items: center;
+
         .icon.wechat {
             display: inline-block;
             width: 24px;
             height: 24px;
             background-image: url(/images/wechat.svg);
             margin-right: 12px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .btn.wechat {
+            width: 100%;
+            justify-content: center;
         }
     }
 }

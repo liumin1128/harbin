@@ -1,6 +1,28 @@
 // @import "bootstrap/scss/variables";
 // @import "../node_modules/bootstrap/scss/variables";
 
+.my-navbar-nav {
+    border-bottom: 2px $primary solid;
+    // height: 60px;
+    .nav-item {
+        padding: 10px 12px;
+        .nav-link {
+            font-size: 17px;
+            font-weight: bold;
+            color: #000000;
+        }
+    }
+    .active {
+        background-color: $primary;
+        .nav-link {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
 .my-title-1 {
     font-size: 24px;
     font-weight: 400;
